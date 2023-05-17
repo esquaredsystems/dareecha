@@ -9,4 +9,7 @@ urlpatterns = [
     path('baham/vehicles/update/<id>', views.update_vehicle, name='update_vehicle'),
     path('baham/vehicles/create/save/', views.save_vehicle, name='save_vehicle'),
     path('baham/aboutus/', views.view_aboutus, name='aboutus')
+    path('baham/vehicles/void/<int:model_id>/', void_model, name='void_model'),
+    path('baham/vehicles/unvoid/<int:model_id>/', unvoid_model, name='unvoid_model'),
+    
 ]
